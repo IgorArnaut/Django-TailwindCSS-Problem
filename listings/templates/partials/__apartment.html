@@ -1,0 +1,29 @@
+<div>
+  <h2>Informacije o stanu</h2>
+  <table border="1">
+    <tr>
+      <th>Lokacija</th>
+      <th>Sprat</th>
+      <th>Površina</th>
+      <th>Broj soba</th>
+      <th>Stanje</th>
+      <th>Grejanje</th>
+      <th>Opremljenost</th>
+    </tr>
+    <tr>
+      <td>{{ apartment.location }}</td>
+      <td>{{ apartment.floor }}</td>
+      <td>{{ apartment.area }}</td>
+      <td>{{ apartment.num_of_rooms }}</td>
+      <td>{{ apartment.state }}</td>
+      <td>{{ apartment.heating }}</td>
+      <td>{{ apartment.equipment }}</td>
+    </tr>
+  </table>
+  <h3>Stvari</h3>
+  <ul>
+    {% for item in apartment.items.all %}
+      <li>{{ item.name }}</li>
+    {% endfor %}
+  </ul>
+</div>

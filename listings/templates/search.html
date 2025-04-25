@@ -1,0 +1,12 @@
+{% extends './base.html' %}
+
+{% block title %}
+  Pretraga oglasa
+{% endblock %}
+
+{% block content %}
+  <h1>Pretraga oglasa</h1>
+  {% include './partials/__search.html' %}
+  <br />
+  <a href="{% url 'list' %}"><button>Nazad</button></a>
+{% endblock %}

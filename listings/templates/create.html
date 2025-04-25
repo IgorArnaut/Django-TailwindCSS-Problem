@@ -1,0 +1,12 @@
+{% extends './base.html' %}
+
+{% block title %}
+  Postavka oglasa
+{% endblock %}
+
+{% block content %}
+  <h1>Postavka oglasa</h1>
+  {% include './partials/__form.html' with value='Postavi' %}
+  <br />
+  <a href="{% url 'list' %}"><button>Nazad</button></a>
+{% endblock %}

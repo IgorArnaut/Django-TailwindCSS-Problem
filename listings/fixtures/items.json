@@ -1,0 +1,28 @@
+[
+  { "model": "listings.item", "pk": 1, "fields": { "name": "Ležaj" } },
+  { "model": "listings.item", "pk": 2, "fields": { "name": "Plakar" } },
+  { "model": "listings.item", "pk": 3, "fields": { "name": "Klima" } },
+  { "model": "listings.item", "pk": 4, "fields": { "name": "Telefon" } },
+  { "model": "listings.item", "pk": 5, "fields": { "name": "TV" } },
+  { "model": "listings.item", "pk": 6, "fields": { "name": "Internet" } },
+  {
+    "model": "listings.item",
+    "pk": 7,
+    "fields": { "name": "Kuhinjski elementi" }
+  },
+  { "model": "listings.item", "pk": 8, "fields": { "name": "Mikrotalasna" } },
+  { "model": "listings.item", "pk": 9, "fields": { "name": "Šporet" } },
+  { "model": "listings.item", "pk": 10, "fields": { "name": "Rerna" } },
+  { "model": "listings.item", "pk": 11, "fields": { "name": "Rešo" } },
+  { "model": "listings.item", "pk": 12, "fields": { "name": "Frižider" } },
+  { "model": "listings.item", "pk": 13, "fields": { "name": "Zamrzivač" } },
+  { "model": "listings.item", "pk": 14, "fields": { "name": "Sudomašina" } },
+  { "model": "listings.item", "pk": 15, "fields": { "name": "Veš mašina" } },
+  {
+    "model": "listings.item",
+    "pk": 16,
+    "fields": { "name": "Kancelarijski nameštaj" }
+  },
+  { "model": "listings.item", "pk": 17, "fields": { "name": "Terasa" } },
+  { "model": "listings.item", "pk": 18, "fields": { "name": "Lođa" } }
+]

@@ -1,0 +1,21 @@
+<div>
+  <form method="post">
+    <fieldset>
+      <legend>Informacije o zgradi</legend>
+      {{ forms.building_form }}
+    </fieldset>
+    <fieldset>
+      <legend>Informacije o stanu</legend>
+      {{ forms.apartment_form }}
+    </fieldset>
+    <fieldset>
+      <legend>Uslovi zakupa</legend>
+      {{ forms.terms_form }}
+    </fieldset>
+    <fieldset>
+      <legend>Oglas</legend>
+      {{ forms.listing_form }}
+    </fieldset>
+    <input type="submit" value="{{ value }}" />
+  </form>
+</div>

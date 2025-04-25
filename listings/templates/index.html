@@ -1,0 +1,31 @@
+{% extends './base.html' %}
+
+{% block title %}
+  Oglasi
+{% endblock %}
+
+{% block content %}
+  <h1>Oglasi</h1>
+  <a href="{% url 'create' %}"><button>Postavi oglas</button></a>
+  <table border="1" class="">
+    <tr>
+      <th>Naslov</th>
+      <th>Postavljen</th>
+      <th>Cena</th>
+      <th>Akcije</th>
+    </tr>
+    {% for listing in listings %}
+      <tr>
+        <td>
+          <a href="{% url 'detail' listing.id %}">{{ listing.title }}</a>
+        </td>
+        <td>{{ listing.created_at|date:'d.m.Y H:i:s' }}</td>
+        <td>{{ listing.apartment.price }} EUR</td>
+        <td>
+          <a href="{% url 'update' listing.id %}"><button>Izmeni</button></a> |
+          <a href="{% url 'delete' listing.id %}"><button>Ukloni</button></a>
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+{% endblock %}

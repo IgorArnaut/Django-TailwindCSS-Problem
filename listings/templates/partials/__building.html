@@ -1,0 +1,53 @@
+<div>
+  <h2>Informacije o zgradi</h2>
+  <table border="1">
+    <tr>
+      <th>Adresa</th>
+      <th>Izgrađen</th>
+      <th>Parking</th>
+      <th>Graža</th>
+      <th>Lift</th>
+      <th>Video nadzor</th>
+      <th>Intefon</th>
+    </tr>
+    <tr>
+      <td>{{ building.street }} {{ building.street_num }}, {{ building.city }}</td>
+      <td>{{ building.constructed_in }}</td>
+      <td>
+        {% if building.parking %}
+          Da
+        {% else %}
+          Ne
+        {% endif %}
+      </td>
+      <td>
+        {% if building.garage %}
+          Da
+        {% else %}
+          Ne
+        {% endif %}
+      </td>
+      <td>
+        {% if building.elevator %}
+          Da
+        {% else %}
+          Ne
+        {% endif %}
+      </td>
+      <td>
+        {% if building.cctv %}
+          Da
+        {% else %}
+          Ne
+        {% endif %}
+      </td>
+      <td>
+        {% if building.intercom %}
+          Da
+        {% else %}
+          Ne
+        {% endif %}
+      </td>
+    </tr>
+  </table>
+</div>

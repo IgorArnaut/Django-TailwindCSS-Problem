@@ -1,0 +1,9 @@
+{
+    "[django-html]": {
+        "editor.defaultFormatter": "junstyle.vscode-django-support"
+    },
+    "tailwindCSS.includeLanguages": {
+        "plaintext": "django-html",
+        "django-html": "html",
+    }
+}

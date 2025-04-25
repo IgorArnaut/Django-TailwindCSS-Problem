@@ -1,0 +1,31 @@
+<div>
+  <h2>Uslovi zakupa</h2>
+  <ul>
+    <li>
+      {% with available=terms.available|date:'Y-m-d' created_at=listing.created_at|date:'Y-m-d' %}
+        {% if terms.available == listing.created_at %}
+          Odmah
+        {% else %}
+          {{ terms.available|date:'d.m.Y' }}
+        {% endif %}
+      {% endwith %}
+    </li>
+    <li>
+      {% if terms.deposit %}
+        Depozit
+      {% endif %}
+    </li>
+    {% if terms.for_students %}
+      <li>Za studente</li>
+    {% endif %}
+    {% if terms.for_workers %}
+      <li>Za radnike</li>
+    {% endif %}
+    {% if terms.smoking_allowed %}
+      <li>Dozvoljeno pušenje</li>
+    {% endif %}
+    {% if terms.pets_allowed %}
+      <li>Dozvoljeni ljubimci</li>
+    {% endif %}
+  </ul>
+</div>
