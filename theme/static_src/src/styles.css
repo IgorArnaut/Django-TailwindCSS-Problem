@@ -16,4 +16,4 @@
 @source "../../../**/*.{html,py,js}";
 
 /* Ignore files in node_modules */
-@source not "!../../../**/node_modules";
+@source not "../../../**/node_modules";
