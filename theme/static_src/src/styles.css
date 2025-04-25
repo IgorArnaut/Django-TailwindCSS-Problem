@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* Templates within theme app (e.g. base.html) */
+@source "../../templates/**/*.html";
+
+/* Templates in other apps */
+@source "../../../**/templates/*.html";
+
 /**
   * A catch-all path to Django template files, JavaScript, and Python files
   * that contain Tailwind CSS classes and will be scanned by Tailwind to generate the final CSS file.
@@ -8,3 +14,6 @@
   * the scope of this path.
   */
 @source "../../../**/*.{html,py,js}";
+
+/* Ignore files in node_modules */
+@source not "../../../**/node_modules";
